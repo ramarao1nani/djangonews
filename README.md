@@ -1,0 +1,2 @@
+# djangonews
+news application
