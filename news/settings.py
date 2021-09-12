@@ -6,7 +6,7 @@ SECRET_KEY = 'yvgvy%$y32ndx*pyavw85!kpr+ru7gm@0o*hk+ai_xzvm%jhl@'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','']
+ALLOWED_HOSTS = ['127.0.0.1','newsaggregatorrs.herokuapp.com/']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
