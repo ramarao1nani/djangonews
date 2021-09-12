@@ -1,0 +1,24 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>News Briefs</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+	</head>
+
+	<body class="bg-pink-200">
+	<div class="grid grid-cols-1 md:grid-cols-5 sm:grid-cols-2 bg-gradient-to-r from-blue-400 via-purple-300 to-blue-400  py-3 m-4 rounded-lg px-5 place-items-center ">
+		<a href='/news'><button class="py-2">Home</button></a>
+		<a href='/news/india'><button class="py-2">India</button></a>
+		<a href='/news/business'><button class="py-2">Business</button></a>
+		<a href='/news/technology'><button class="py-2">Technology</button></a>
+		<a href='/news/world'><button class="py-2">World</button></a>
+	</div>
+	{%block body%}
+	{%endblock%}
+	</div>
+	</body>
+</html>

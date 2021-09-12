@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div>
+    <div class="grid grid-cols-3 bg-gradient-to-r from-purple-400 via-blue-300 to-purple-400  py-3 m-4 rounded-lg px-5 place-items-center">
+        <h1>Total Cases {{cases}} </h1>
+        <h1>Total deaths {{deaths}} </h1>
+        <h1>Total Recovered {{recovered}}</h1>
+    </div>
+    <div>
+    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2">
+        {% for a,b in news %}
+            <div class="card">
+                <h5 class="font-bold text-black p-3 "> {{a}}</h5>
+                <h5 class="border-t-2 border-white p-3 hover:border-purple-800">{{b}}</h5>
+            </div>  
+        {% endfor %}
+    </div>
+</div>
+{%  endblock body %} 
