@@ -4,9 +4,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'yvgvy%$y32ndx*pyavw85!kpr+ru7gm@0o*hk+ai_xzvm%jhl@'
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','newsaggregatorrs.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
